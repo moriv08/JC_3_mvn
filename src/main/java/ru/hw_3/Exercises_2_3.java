@@ -17,7 +17,7 @@ public class Exercises_2_3 {
 //                System.out.println(new String(arr));
             }
         }catch (IOException e){
-
+            e.printStackTrace();
         }
 
         while (i < 49)

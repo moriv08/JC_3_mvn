@@ -14,6 +14,7 @@ public class Exercise_3 {
                 System.out.print((char)x);
                 if (++i > 1799) break;
             }
+
             System.out.println('\n' +
                     "Всего счинано символов " + i);
         }catch (IOException e){

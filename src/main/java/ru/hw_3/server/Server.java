@@ -14,7 +14,6 @@ public class Server {
 
     Server(){
 
-
         try {
 
             server = new ServerSocket(8189);
@@ -29,9 +28,8 @@ public class Server {
                 writeToFile("files/texts/fromServer.txt");
 
             }catch (IOException e){
-
+                e.printStackTrace();
             }
-
 
         }catch (IOException e){
         e.printStackTrace();
@@ -56,5 +54,4 @@ public class Server {
         while ((x = in.read()) != -1)
             this.file.write(x);
     }
-
 }
