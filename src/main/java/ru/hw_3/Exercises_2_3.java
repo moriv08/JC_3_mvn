@@ -40,7 +40,6 @@ public class Exercises_2_3 {
             while ((x = in.read()) != -1)
                 out.write(x);
 
-
 //    Вопрос: почему не работает Enumeration.  В таком виде распечатывает только первые символы
 //            Enumeration<InputStream> in = Collections.enumeration(all);
 //
