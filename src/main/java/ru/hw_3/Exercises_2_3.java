@@ -40,15 +40,13 @@ public class Exercises_2_3 {
             while ((x = in.read()) != -1)
                 out.write(x);
 
-
-//    Вопрос: почему не работает Enumeration.  В таком виде распечатывает только первые символы
-//            Enumeration<InputStream> in = Collections.enumeration(all);
+//            Enumeration<InputStream> in2 = Collections.enumeration(all);
 //
-//            while (in.hasMoreElements()){
-//                int x;
-//                while ((x = in.nextElement().read()) != -1)
-//                    System.out.println(x);
-//                    out.write(x);
+//            while (in2.hasMoreElements()){
+//                int y;
+//                if ((y = in2.nextElement().read()) != -1)
+//                    System.out.println(y);
+//                    out.write(y);
 //            }
 
 
