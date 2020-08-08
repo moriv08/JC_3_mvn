@@ -1,5 +1,5 @@
 package ru.hw_5.race.calcul;
 
-public interface Divider {
+public interface Dividable {
     int divide(int i, int b);
 }

@@ -40,7 +40,7 @@ public class Tunnel extends Stage {
 
                 synchronized (this) {
                     if ((c.round == Race.rounds) && !Car.isWinner.get()) { // усли победителя еще нет и участник прошел все дороги и тоннели, он попадает в блок кода и аиксирует свою победу
-//                        System.err.println("the winner is " + c.getName()); // победитель
+                        System.err.println(c.getName() + " WIN"); // победитель
                         Car.isWinner.set(true);
                         Car.winner = c;
                     }

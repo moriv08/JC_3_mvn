@@ -66,10 +66,10 @@ public class MainClass {
 
     private void longVariant(){
 
-        Adder a;
-        Taker t;
-        Multiplier m;
-        Divider d;
+        Additionable a;
+        Subtractable t;
+        Multipliable m;
+        Dividable d;
 
         int first = digit("Введите первое число");
         String simb = simbol("Введите знак + - * или /");

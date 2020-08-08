@@ -1,5 +1,5 @@
 package ru.hw_5.race.calcul;
 
-public interface Taker {
+public interface Subtractable {
     int take(int a, int b);
 }

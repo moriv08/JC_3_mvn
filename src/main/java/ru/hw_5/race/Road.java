@@ -18,7 +18,7 @@ public class Road extends Stage {
 
             synchronized (this) {
                 if ((c.round == Race.rounds) && !Car.isWinner.get()) {
-//                    System.err.println("the winner is " + c.getName()); // победитель
+                    System.err.println(c.getName() + " WIN"); // победитель
                     Car.isWinner.set(true);
                     Car.winner = c;
                 }
