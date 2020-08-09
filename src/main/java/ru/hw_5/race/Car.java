@@ -67,6 +67,8 @@ public class Car implements Runnable {
 
     public static void theWinner(Car[] cars){   // метод записывает участников в массив для простой распечатки
 
+        System.out.println('\n');
+
         for (int i = 1; i < cars.length - 1; i++) {
             if (cars[i] == winner){
                 Car tmp = cars[0];

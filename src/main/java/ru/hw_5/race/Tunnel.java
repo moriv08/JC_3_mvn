@@ -20,20 +20,20 @@ public class Tunnel extends Stage {
 
             try {
 
-//                System.out.println(c.getName() + " готовится к этапу(ждет): " + description);
-                System.out.println(c.getName() + " подъехал к тунелю: " + description);
+                System.out.println(c.getName() + " готовится к этапу(ждет): " + description);
+//                System.out.println(c.getName() + " подъехал к тунелю: " + description);
 
                 semaphore.acquire();
-//                System.out.println(c.getName() + " начал этап: " + description);
-                System.out.println(c.getName() + " въехал в тунель: " + description);
+                System.out.println(c.getName() + " начал этап: " + description);
+//                System.out.println(c.getName() + " въехал в тунель: " + description);
                 Thread.sleep(length / c.getSpeed() * 1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } finally {
                 semaphore.release();
-//                System.out.println(c.getName() + " закончил этап: " + description);
+                System.out.println(c.getName() + " закончил этап: " + description);
 
-                System.out.println(c.getName() + " выехал из тунеля: " + description);
+//                System.out.println(c.getName() + " выехал из тунеля: " + description);
                 c.round++;
 
                 Race.checkPoints.decrementAndGet(); // пройденная контрольная точка
