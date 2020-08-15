@@ -17,10 +17,11 @@ public class ParamArrayTest {
     int[] arr_2;
 
     @Parameterized.Parameters
-    public static Collection<Object[][]> data(){
-        return Arrays.asList(new Object[][][]{
-//                {2, 3, 3},
-                {{1, 2, 3}, {1, 2, 4, 1, 2, 3}},
+    public static Collection<Object[]> data(){
+        return Arrays.asList(new Object[][]{
+                {new int[] {1, 2, 3}, new int[]{1, 2, 4, 1, 2, 3}},
+                {new int[] {9, 5, 2, 7, 1, 2, 3}, new int[]{1, 2, 4, 9, 5, 2, 7, 1, 2, 3}},
+                {new int[] {3, 3, 3}, new int[]{1, 2, 4, 3, 3, 3}},
         });
     }
 

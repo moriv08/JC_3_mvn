@@ -15,21 +15,18 @@ public class ParamTest {
     @Parameterized.Parameters
     public static Collection<Object[]> data(){
         return Arrays.asList(new Object[][]{
-                {1, 2, 3, 4, 5, 6, 7, 8},
-                {2, 3, 4, 5, 6, 7, 9},
-                {1, 1, 1, 1,1},
-                {4},
+                {new int[]{1, 2, 3, 4, 5, 6, 7, 8}},
+                {new int[]{2, 3, 4, 5, 6, 7, 9}},
+                {new int[]{1, 1, 1, 1,1}},
+                {new int[]{4, 1}},
 
         });
     }
 
     int[] arr;
 
-    public ParamTest(int... arr) {
-        this.arr = new int[arr.length];
-        for (int i = 0; i < arr.length; i++) {
-            this.arr[i] = arr[i];
-        }
+    public ParamTest(int[] arr) {
+            this.arr = arr;
     }
 
     MainClass mainClass;
