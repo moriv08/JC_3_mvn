@@ -1,8 +1,8 @@
-package ru.hw_7;
+package ru.hw_8;
 
 public class Matrix {
     public static void main(String[] args) {
-        int [][] arr = new int[4][4];
+        int [][] arr = new int[11][11];
         fillRight(arr, 0, 0, 0);
         print(arr);
     }
